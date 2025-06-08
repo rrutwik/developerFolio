@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Rutwik Patel",
+  title: "Hi all, I'm Rutwik",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Backend Engineer 🧠 building production-grade APIs, cloud-native infra, and AI-powered systems with Node.js, Python, AWS, and OpenAI."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Qu5IGTAU-15-O6RCyAJBrcp1O1m1xkcX/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/rrutwik",
+  linkedin: "https://www.linkedin.com/in/rutwikp/",
+  gmail: "rutwikpatel08@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -47,77 +43,63 @@ const socialMediaLinks = {
 
 // Skills Section
 
+// Skills Section
+
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "BACKEND-FOCUSED SOFTWARE ENGINEER WHO LOVES BUILDING SCALABLE SYSTEMS AND AUTOMATING INFRASTRUCTURE",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Architect and build backend systems using Node.js and Python"),
+    emoji("⚡ Design and manage scalable infrastructure on AWS using services like EC2, Lambda, and Fargate"),
+    emoji("⚡ Integrate AI tools like LangChain and OpenAI APIs into real-time applications"),
+    emoji("⚡ Improve developer workflows with CI/CD pipelines and blue/green deployments"),
+    emoji("⚡ Optimize system cost and performance with autoscaling and process management strategies")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "CI/CD",
+      fontAwesomeClassname: "fas fa-tools"
+    },
+    {
+      skillName: "LangChain",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "OpenAI",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "JavaScript/TypeScript",
+      fontAwesomeClassname: "fab fa-js"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
@@ -126,77 +108,94 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Institute of Technology, Nirma University",
+      logo: require("./assets/images/nirmaUniversityLogo.png"), // Replace with your actual logo path
+      subHeader: "B.Tech. in Information Technology",
+      duration: "July 2016 - May 2020",
+      desc: "Studied core subjects including Data Structures, Algorithms, Object-Oriented Programming, and Database Management Systems.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Participated in ICPC Asia Regional 2018; Team ranked top 103 in India",
+        "Focused on building strong fundamentals in problem-solving and software engineering"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
+
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Backend Development & APIs",
+      progressPercentage: "90%" // Strong experience with Node.js, Python, Express, Django
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Cloud Infrastructure & DevOps",
+      progressPercentage: "85%" // AWS (EC2, Lambda, Fargate, CDK, etc.), Docker, CI/CD
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend Developnment",
+      progressPercentage: "25%" // Skilled in quick delivery using docs, GPT, LangChain, etc.
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
-
-// Work experience section
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "SDE-2",
+      company: "GeoServe",
+      companylogo: require("./assets/images/geoserveLogo.png"), // Replace with actual logo path
+      date: "October 2024 – April 2025",
+      desc: "Built scalable backend services and integrated Microsoft OAuth 2.0 SSO across internal products.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Integrated Microsoft OAuth 2.0 SSO across internal products (GeoStem, GeoPerform, GeoConnect, GeoNext).",
+        "Developed APIs based on Figma design specs across DB Sync, GeoOne API, and Voyage Optimisation API."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "SDE-2",
+      company: "Pulse Energy",
+      companylogo: require("./assets/images/pulseEnergyLogo.png"), // Replace with actual logo path
+      date: "August 2023 – August 2024",
+      desc: "Designed payment modules and built AI-powered chatbot backend for EV charging services.",
+      descBullets: [
+        "Implemented payment settlement module to automate T+3 settlements to charge point owners.",
+        "Developed Paybox APIs supporting UPI and FASTag EV charging payments.",
+        "Built and managed AI chatbot backend with LangChain and OpenAI APIs, handling diagnostics and route planning.",
+        "Managed AWS infrastructure with blue/green deployments and robust Node.js service process management."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "SDE-1 / SDE-2",
+      company: "Masai",
+      companylogo: require("./assets/images/masaiLogo.png"), // Replace with actual logo path
+      date: "September 2020 – July 2023",
+      desc: "Architected backend for Online Judge platform supporting thousands of users with real-time features.",
+      descBullets: [
+        "Owned backend supporting ~3000 users and 100+ concurrent code evaluations.",
+        "Created custom scaling algorithm reducing contest creation time by 25%.",
+        "Built adaptive Admission Test system with WebSockets and proctoring.",
+        "Integrated Whisper for video transcription and ChatGPT API for automated evaluation.",
+        "Reduced infrastructure cost by 70% using EC2 spot instances and custom auto-scaling.",
+        "Led DSA problem design, mock interviews, and assessments across cohorts."
+      ]
+    },
+    {
+      role: "SDE Intern",
+      company: "Amazon",
+      companylogo: require("./assets/images/amazonLogo.png"), // Replace with actual logo path
+      date: "January 2020 – July 2020",
+      desc: "Developed file scanning service with AWS ECS Fargate and auto-scaling capabilities.",
+      descBullets: [
+        "Built 'Abhaya' file scanning service on ECS Fargate with ticket-based alerting.",
+        "Provisioned infrastructure using AWS CDK & CloudFormation.",
+        "Worked extensively with AWS services: SQS, Lambda, Step Functions, API Gateway, CloudWatch, DynamoDB."
+      ]
     }
   ]
 };
@@ -239,7 +238,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +299,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +323,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +342,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +355,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,15 +371,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-7023379995",
+  email_address: "rutwikpatel08@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
