@@ -48,19 +48,27 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "BACKEND-FOCUSED SOFTWARE ENGINEER WHO LOVES BUILDING SCALABLE SYSTEMS AND AUTOMATING INFRASTRUCTURE",
+    "BACKEND ENGINEER SPECIALIZING IN NODE.JS, GOLANG, AND CLOUD NATIVE SOLUTIONS",
   skills: [
-    emoji("⚡ Architect and build backend systems using Node.js and Python"),
-    emoji("⚡ Design and manage scalable infrastructure on AWS using services like EC2, Lambda, and Fargate"),
-    emoji("⚡ Integrate AI tools like LangChain and OpenAI APIs into real-time applications"),
-    emoji("⚡ Improve developer workflows with CI/CD pipelines and blue/green deployments"),
-    emoji("⚡ Optimize system cost and performance with autoscaling and process management strategies")
+    emoji("⚡ Design and implement scalable backend systems using Golang, Node.js, and Python"),
+    emoji("⚡ Build and manage cloud infrastructure on AWS (EC2, Lambda, Fargate) and Azure"),
+    emoji("⚡ Develop AI-powered features using LangChain, OpenAI, and custom ML models"),
+    emoji("⚡ Optimize system performance and reduce costs through efficient architecture and auto-scaling"),
+    emoji("⚡ Implement robust CI/CD pipelines and infrastructure-as-code for reliable deployments")
   ],
 
   softwareSkills: [
     {
+      skillName: "Golang",
+      fontAwesomeClassname: "fab fa-google"
+    },
+    {
       skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "JavaScript/TypeScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
       skillName: "Python",
@@ -69,6 +77,10 @@ const skillsSection = {
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
       skillName: "Docker",
@@ -87,16 +99,16 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-tools"
     },
     {
+      skillName: "WebSockets",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
       skillName: "LangChain",
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "OpenAI",
-      fontAwesomeClassname: "fas fa-brain"
-    },
-    {
-      skillName: "JavaScript/TypeScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "DSA",
+      fontAwesomeClassname: "fas fa-code"
     }
   ],
   display: true
@@ -128,16 +140,20 @@ const techStack = {
   viewSkillBars: true,
   experience: [
     {
-      Stack: "Backend Development & APIs",
-      progressPercentage: "90%" // Strong experience with Node.js, Python, Express, Django
+      Stack: "Backend Development (Golang/Node.js)",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Cloud Infrastructure & DevOps",
-      progressPercentage: "85%" // AWS (EC2, Lambda, Fargate, CDK, etc.), Docker, CI/CD
+      Stack: "Cloud & DevOps (AWS/Azure)",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Frontend Developnment",
-      progressPercentage: "25%" // Skilled in quick delivery using docs, GPT, LangChain, etc.
+      Stack: "System Design & Architecture",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "AI/ML Integration",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false
@@ -147,14 +163,26 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "MTS-3",
+      company: "ColorTokens",
+      companylogo: require("./assets/images/colortokensLogo.png"),
+      date: "July 2025 – Present",
+      desc: "Working on enhancing tenant management and onboarding workflows in the NG-Backend service.",
+      descBullets: [
+        "Implemented Tenant Lifecycle feature in NG-Backend service, enhancing tenant onboarding and management workflows.",
+        "Working on scalable backend services for enterprise security solutions."
+      ]
+    },
+    {
       role: "SDE-2",
       company: "GeoServe",
-      companylogo: require("./assets/images/geoserveLogo.png"), // Replace with actual logo path
+      companylogo: require("./assets/images/geoserveLogo.png"),
       date: "October 2024 – April 2025",
       desc: "Built scalable backend services and integrated Microsoft OAuth 2.0 SSO across internal products.",
       descBullets: [
-        "Integrated Microsoft OAuth 2.0 SSO across internal products (GeoStem, GeoPerform, GeoConnect, GeoNext).",
-        "Developed APIs based on Figma design specs across DB Sync, GeoOne API, and Voyage Optimisation API."
+        "Integrated Microsoft OAuth 2.0 SSO across 4 internal products.",
+        "Developed APIs for DB Sync, GeoOne, and Voyage Optimization based on Figma specifications.",
+        "Ensured production readiness of all developed APIs and features."
       ]
     },
     {
@@ -205,7 +233,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -213,32 +241,16 @@ const openSource = {
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+  projects: [{
+    image: require("./assets/images/novo.svg").default,
+    projectName: "Novo Cabs",
+    projectDesc: "• PHP backend\n• Fixed bug allowing multiple drivers to accept the same ride by adding a lock\n• Implemented wallet system for automated payments\n• Enforced driver fee payments by setting a payment threshold",
+    footerLink: [{
+      name: "Visit Website",
+      url: "http://novocabs.com/"
+    }]
+  }],
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
